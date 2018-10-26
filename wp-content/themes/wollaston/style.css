@@ -1,0 +1,600 @@
+/*
+Theme Name: Wollaston
+Theme URI: http://www.sportingcoalition.ca
+Author: Derek Naulls
+Author URI: http://www.4dconcepts.ca
+Version: 1.00
+*/
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border-spacing: 12px;
+}
+img {
+	border: none;
+	border-style: none;
+}
+
+/* Global styles */
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Global font styles */
+
+p {
+	line-height: 1.6em;
+}
+h1, h2, h3 {
+	font-family: "Rockwell";
+	font-weight: bold;
+	text-transform: none;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.4em;
+	padding: 0 0 7px;
+}
+h3#comments {
+	padding: 20px 0;
+	border-top: 1px #666 dotted;
+	margin: 150px 0 0;
+}
+nav.mainMenu ul,
+nav.metaMenu ul {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: .8em;
+	color: #CCC;
+	line-height: 20px;
+}
+a:link,
+a:active,
+a:hover,
+a:visited {
+	text-decoration: none;
+}
+a:link,
+a:active,
+a:visited {
+	color: #000;
+}
+a:hover {
+	color: #666;
+}
+
+/* Header and Navigation styles */
+
+.header {
+    background: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.footer {
+    background: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+header {
+	margin: 0 auto;
+	background-color: #000;
+	height: 50px;
+	width: 1040px;
+}
+header h1 {
+	font-size: 2.5em;
+	clear: both;
+	padding: 7px 0;
+	font-family: "Rockwell";
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: yellow;
+	border-top: 1px #666 solid;
+	border-bottom: 1px #666 solid;
+}
+.site-title {
+	clear: both;
+	padding: 2px 0;
+	border-top: 1px #666 solid;
+	border-bottom: 1px #666 solid;
+	margin: 40px 0 20px;
+	position: relative;
+}
+nav {
+	display: inline;
+}
+div.menu-header {
+	display: inline;
+}
+nav.mainMenu,
+nav.metaMenu {
+	text-transform: uppercase;
+	position: relative;
+	height: 50px;
+	float: left;
+}
+nav.mainMenu ul li a:link,
+nav.mainMenu ul li a:visited {
+	color: #FFF;
+	padding: 5px 0;
+}
+nav.mainMenu ul li a:hover,
+nav.mainMenu ul li a:active {
+	color: #FFF;
+	border-bottom: 5px #FFF solid;
+	padding: 5px 0;
+}
+nav.mainMenu ul {
+	display: inline;
+	height: 50px;
+}
+nav.mainMenu ul li,
+nav.metaMenu ul li {
+	display: inline;
+	list-style: none;
+	float: left;
+	padding: 0 10px;
+	margin: 16px 0;
+}
+nav.mainMenu ul li ul.sub-menu,
+nav.metaMenu ul li ul.sub-menu { 
+	position: absolute;
+	background-color: #000;
+	left: 0px;
+	top: 44px;
+	width: 1024px;
+	display: none;
+	padding: 20px 20px 10px;
+} 
+nav.mainMenu ul li:hover > ul,
+nav.metaMenu ul li:hover > ul { 
+	display: block;
+	z-index: 99;
+} 
+nav.metaMenu ul li a:link,
+nav.metaMenu ul li a:visited {
+	color: #09F;
+	padding: 5px 0;
+}
+nav.metaMenu ul li a:hover {
+	color: #09F;
+	border-bottom: 5px #09F solid;
+	padding: 5px 0;
+}
+
+/* Content and Page styles */
+
+#homeWrap {
+	width: 100%;
+	overflow: auto;
+}
+#home {
+	width: 580px;
+	float: left;
+}
+#outerWrapper {
+	margin: 0 auto;
+	width: 1040px;
+	padding: 50px 20px 10px;
+}
+#contentWrap{
+	overflow: auto;
+	background-color: #fff;
+	padding: 20px 20px;
+	margin: 0;
+}
+#content {
+	width: 650px;
+	float: left;
+	padding-bottom: 50px;
+}
+#content article, .widget-area aside, form#commentform{
+	margin-bottom: 20px;
+	width: 100%;
+}
+div#content-parent {
+	display: table;
+	border-collapse: collapse;
+}
+div#content-parent article {
+	width: 96%;
+	height: 300px;
+	position: relative;
+	padding: 0;
+	margin: 5px 20px;
+}
+div#content-parent article div#meta {
+	position: relative;
+	float: left;
+	width: 65%;
+	margin: 0 20px;
+}
+div#content-parent article div#title,
+div#content-parent article div#tags {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+div#content-parent article div#tags .actor-tag-image {
+margin: 10px;
+position: relative;
+float: left;
+vertical-align: middle;
+}
+div#content-parent article div#title {
+	height: 200px;
+	border-bottom: 1px #000 solid;
+}
+div#content-parent article div#title p {
+	line-height: 1.6em;
+	width: 445px;
+}
+div#content-parent article.post div.overlay {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 99;
+}
+div#content-parent article.post div.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+div#content-parent article.post div.overlay a {
+	display: none;
+	text-decoration: none;
+}
+div#content-parent article.post div.overlay:hover a {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+}
+div#content-parent article.post div.overlay:hover a h1, 
+div#content-parent article.post div.overlay:hover a h2 {
+	color: #FFF;
+}
+div#content-parent article.post div.image {
+	position: relative;
+	float: left;
+}
+div.entry, div.entry p {
+	margin: 0 0 18px;
+	font-size: 0.9em;
+}
+div#search-request {
+	display: inline;
+}
+div.query, div.query p {
+	padding
+	font-size: 0.9em;
+	margin: 0 0 5px;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+h3.query {
+	font-size: 1em;
+	font-family: verdana;
+	font-weight: normal;
+	padding: 0 0 30px;
+}
+h2.query {
+	font-size: 1em;
+}
+div.entry {
+	width: 100%;
+}
+span#post-count {
+    height: 50px;
+}
+table.search-request {
+	border-collapse: collapse;
+	height: 100px;
+	width: 100%
+}
+table.search-request tr td {
+	position: relative;
+	vertical-align: top;
+	border-bottom: 1px #666 dotted;
+	padding: 0 0 13px 0;
+	margin: 0;
+}
+table.search-request tr td img {
+	padding-right: 15px;
+}
+div.entry-sidebar {
+	float: left;
+	width: 320px;
+}
+div#respond {
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px #666 dotted;
+	margin: 150px 0 0;
+}
+div.postmetadata {
+	width: 100%;
+	padding: 5px 0;
+	border-top: 1px #666 dotted;
+	border-bottom: 1px #666 dotted;
+	margin: 20px 0;
+	height: 38px;
+}
+
+div.postmetadata ul li {
+	list-style: none;
+	display: inline;
+	float: left;
+	padding: 10px;
+	height: 20px;
+}
+.wp-caption {
+	padding: 17px 0 10px;
+	position: relative;
+}
+img.size-medium {
+	padding: 0 20px 0 0;
+	margin: 0;
+	word-wrap: normal;
+	float: left;
+}
+p.wp-caption-text {
+    padding: 15px 20px 10px;
+	background: #000;
+	color: #FFF;
+	position: relative;
+	top: -3px;
+}
+input#author,
+input#email,
+input#url,
+textarea#comment {
+	border: 1px #CCC solid;
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #FFF;
+	display: list-item;
+	position: relative;
+	width: 95%;
+}
+.screen-reader-text {
+	display: none;
+}
+div.meta {
+	padding: 0 0 20px;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: lighter;
+}
+span#permalink {
+	font-size: 0.8em;
+}
+
+/* Widget and Input styles */
+
+.widget-area,
+.connection-area {
+    clear: right;
+    float: right;
+    width: 300px;
+    padding-left: 20px;
+    border-left: solid 2px;
+}
+.widget-area ul {
+    padding: 0;
+    list-style: none;
+}
+.widget-area ul li {
+    padding: 12px 0 12px 6px;
+}
+.widget-area ul li:nth-child(even) {
+    background-color: #DCD7C8;
+}
+#wmp_widget-2 ol,
+ol.commentlist {
+    counter-reset: li;
+    margin-left: 0;
+    padding-left: 0;
+}
+#wmp_widget-2 ol > li,
+ol.commentlist > li {
+    position: relative;
+    margin: 6px 0px 6px 30px;
+    padding: 12px;
+    list-style: none;
+}
+#wmp_widget-2 ol > li:nth-child(even) {
+	background-color: #DCD7C8;
+}
+#wmp_widget-2 ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top: 0px;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    height: 44px;
+    margin-right:8px;
+    padding:4px;
+    color:#fff;
+    border-top: 8px solid #777;
+    background: #777;
+    font-weight:bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align:center;
+}
+ol.commentlist > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width: 2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    height: 2em;
+    margin-right:8px;
+    padding:4px;
+    color:#fff;
+    border-top: 2px solid #777;
+    background: #777;
+    font-weight:bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align:center;
+}
+.screen-reader-text input#s {
+
+}
+input#s {
+    margin: 10px 1px;
+    padding: 7px 75px 7px 14px;
+    width: 150px;
+    border: none;
+    border-radius: 14px;
+}
+#searchform {
+    position: relative;
+}
+input#searchsubmit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #000;
+    border: none;
+    padding: 8px 10px;
+    color: #FFF;
+    border-radius: 14px;
+    margin: 10px 0 10px 10px;
+    font-size: 0.8em;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+div.search-container {
+    float: right;
+    position: relative;
+    padding: 5px 9px;
+    margin: 6px 0;
+    background: red;
+    border-radius: 19px;
+	border-top-right-radius: 0;
+    z-index: 99;
+}
+div.search-pop-up {
+    position: absolute;
+    right: 25px;
+    top: -5px;
+    display: none;
+    z-index: 1;
+    padding: 0 20px;
+}
+div.search-container:hover {
+	border-radius: 19px;
+	border-bottom-left-radius: 0;
+}
+div.search-container:hover > div {
+	display: block;
+}
+div.magnify {
+}
+.page #content {
+	width: 960px;
+	float: none;
+}
+.commentlist .comment-body {
+	padding: 20px 0;
+}
+.commentlist .comment-body .avatar,
+.commentlist .comment-body .says {
+	display: none;
+}
+div.read-more,
+div.read-more a:link,
+div.read-more a:active,
+div.read-more a:visited {
+	color: #FFF;
+    position: relative;
+	cursor: pointer;
+}
+div.read-more a:hover {
+	color: #FF0;
+}
+div.the-jump {
+	font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    
+	padding: 5px 15px;
+    color: #FFF;
+    background: #000;
+    margin: 6px 0 6px 30px;
+    border: none;
+    border-radius: 91px;
+    
+	display: none;
+	width: 70px;
+	text-align: center;
+	left: -3px;
+	z-index: 1;
+}
+div.read-more:hover > div {
+	display: block;
+}
+
+/* Footer styles */
+
+footer {
+	font-size: .8em;
+	text-align: left;
+	padding: 0;
+	background: #000;
+	color: #666;
+	margin: 10px auto;
+	width: 1040px;
+}
+nav.footerMenu {
+	position: relative;
+}
+nav.footerMenu ul li a:link,
+nav.footerMenu ul li a:visited {
+	color: #666;
+}
+nav.footerMenu ul li a:hover,
+nav.footerMenu ul li a:active, {
+	background-color: #CCC;
+	color: #000;
+}
+nav.footerMenu ul li {
+	list-style: none;
+	display: inline;
+	padding: 2px 2px 2px 6px;
+	border-left: 1px #666 solid;
+}
+nav.footerMenu .menu-header {
+	position: relative;
+	display: inline;
+	float: left;
+	padding-right: 8px;
+}

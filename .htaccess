@@ -1,0 +1,7 @@
+
+# BEGIN WordPress
+
+# END WordPress
+
+AddType application/vnd.google-earth.kml+xml    kml
+AddType application/vnd.google-earth.kmz        kmz

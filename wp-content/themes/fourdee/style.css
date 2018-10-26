@@ -1,0 +1,539 @@
+/*
+Theme Name: Fourdee Concepts - Oct/2014
+Theme URI: http://www.sportingcoalition.ca
+Author: Derek Naulls
+Author URI: http://www.4dconcepts.ca
+Version: 2.02 a
+*/
+
+
+/* RESET GLOBAL CSS VALUES */
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+body {
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+#hidden {
+    display: none;
+}
+#nothing {
+    cursor: pointer;
+}
+
+/* IMAGE ALIGNMENT CLASSES */
+
+img.aligncenter {
+    padding: 2em 0;
+}
+
+/* FONTS */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	font-weight: 100;
+	line-height: 1.5em;
+}
+#main {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+h1, h2, h3{
+	font-family: 'Garamond', serif;
+	font-weight: 100;
+	font-size: 175%;
+	margin: 5px 0 20px;
+	color: #222;
+}
+.product h1 {
+    color: #111;
+    font-size: 125%;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+.product h1:hover{
+	transition: all 0.25s ease;
+	background-color: #111;
+	color: #FFF;
+}
+blockquote {
+    background-color: #CCC;
+}
+blockquote p {
+    padding: 2em 0;
+    margin: 0 auto 2em;
+    max-width: 750px;
+}
+
+/* LINKS AND FORM FIELDS */
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+#main ul li a span {
+    padding: 70px 15px 20px 15px;
+}
+input[type='text'] {
+    width: 90%;
+    display: block;
+    padding: 0.5em 0.2em;
+    margin: 1em 0;
+    color: #999;
+}
+label {
+	width: 90%;
+    display: block;
+    padding: 0.5em 0.2em;
+    margin: 1em 0;
+    color: #111;
+}
+input[type="button"] {
+    padding: 0.8em 1.2em;
+    border: none;
+    color: #FFF;
+    background-color: #06F;
+	/* Animation for rollover */	
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	cursor: pointer;
+}
+input:focus {
+    outline: 1px solid #111;
+	
+    outline-offset: -1px;
+    color: #111;
+}
+input[type="button"]:hover,
+input[type="button"]:focus {
+	background-color: #CCC;
+	color: #111;
+	border: none;
+	outline: none;
+}
+button {
+    background: #EEE;
+    border: none;
+    padding: 1em;
+    margin: 0.5em 0;
+    width: 100%;
+	cursor: pointer;
+}
+button {
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+button:hover {
+	background-color: #060;
+	color: #EEE;
+}
+
+/* HEADER */
+
+header {
+    margin: auto;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+ul.menu {
+	
+}
+ul.sub-menu {
+    display: none;
+}
+nav ul li {
+    position: relative;
+    top: 100px;
+    display: block;
+    font-family: 'Ariel', serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0.55em 0;
+}
+nav ul li a {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    color: #EEE;
+}
+nav ul li a:hover {
+	color: #FF0;
+}
+ul.post-categories li {
+	position: inherit;
+    
+    
+    
+	display: table-cell;
+	font-family: 'Roboto', sans-serif;
+    
+	font-weight: inherit;
+    
+	font-size: inherit;
+    
+	margin: 0;
+	top: 0;
+	vertical-align: middle;
+}
+menu.sub {
+    z-index: 99;
+
+}
+nav.loginMenu {
+    display: inline-block;
+    margin-top: 1em;
+}
+.loginMenu span {
+    display: inline-block;
+    padding: 1em 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    color: #FFF;
+    background-color: #112;
+    float: left;
+}
+.loginMenu span:first-child {
+	background-color: #FF0;
+}
+.loginMenu span:last-child {
+	border-left: solid;
+}
+.loginMenu span#toggle-switch:hover {
+    cursor: pointer;
+}
+menu.popOut {
+    display: none;
+    background-color: rgba(0,0,0,0.95);
+    position: absolute;
+    top: 0;
+}
+.menu-user {
+    vertical-align: middle;
+    display: table-cell;
+}
+#main ul {
+padding: 0;
+margin: 0;
+overflow: hidden;
+}
+nav.mainMenu {
+    padding: 3em;
+}
+
+/* NAVIGATION LINKS */
+
+.menuWrapper {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    display: table;
+    top: -101%;
+    z-index: 99;
+}
+#main {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: #FFF;
+    outline: 1px solid #FFF;
+    padding: 0;
+    margin: 11em;
+    width: 50%;
+
+    height: 50%;
+}
+#main ul li a {
+	color: #EEE;
+}
+#extras nav {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+#extras ul li a {
+	color: #FFF;
+}
+
+/* CONTENT */
+
+content {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.outerWrapper {
+    background-color: rgba(255,255,255,0.8);
+}
+.wrapper {
+    padding: 2em 1em;
+    max-width: 47em;
+    margin: 0 auto;
+}
+.home .wrapper {
+    padding: 2em 1em;
+    max-width: 60em;
+    margin: 0 auto;
+}
+.outerWrapper:before,
+.outerWrapper:after {
+    display: table;
+	content: "";
+	clear: both;
+}
+#extras {
+    background-color: #F00;
+
+    padding: 0.55em 1em;
+}
+section.isptopes {
+    position: relative;
+    top: 0;
+    background-size: cover;
+}
+section.isotopes:before,
+section.isptopes:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+div#padding {
+    padding: 2em 4em 1em;
+    margin: 0 auto;
+    max-width: 35em;
+}
+article {
+    text-align: center;
+}
+article p {
+    margin: 0 auto 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1.5em;
+    max-width: 750px;
+    text-align: left;
+}
+h1 {
+    margin: 0 auto 0.75em;
+    font-weight: 700;
+    font-size: 40px;
+    max-width: 750px;
+    color: #EEE;
+}
+article h2 {
+    max-width: 750px;
+    margin: 2em auto 1em;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+/* FOOTER */
+
+footer,
+.outerWrapper {
+    max-width: 80em;
+    bottom: 0;
+    padding: 1em;
+    margin: 0 auto;
+    color: #111;
+}
+footer aside {
+    padding: 1em 0;
+    border-top: solid 1px #AAA;
+    border-bottom: solid 1px #AAA;
+}
+footer aside ul li {
+    list-style: none;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer nav {
+    padding: 1em 0 2em;
+}
+footer nav ul li {
+    list-style: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 80%;
+    padding-right: 1.55em;
+}
+footer nav ul li:first-child {
+    
+}
+footer nav ul li:last-child {
+    float: right;
+    padding-right: 0;
+}
+.social {
+    width: 30px;    
+    height: 30px;
+    margin: 0 0.3em;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(http://4dconcepts.ca/wp-content/themes/fourdee/images/icons/social-icons.png);
+}
+#facebook{
+    background-position: 0 top;
+}
+
+
+#twitter{
+    background-position: -30px top;
+}
+#google{
+    background-position: -60px top;
+}
+#blog{
+    background-position: -90px top;
+}
+#facebook:hover{
+    background-position: 0 bottom;
+}
+#twitter:hover{
+    background-position: -30px bottom;
+}
+#google:hover{
+    background-position: -60px bottom;
+}
+#blog:hover{
+    background-position: -90px bottom;
+}
+
+
+/* MARQUEE BANNER */
+
+.current {
+    z-index: 1!important;
+}
+.previous {
+    z-index: 0!important;
+}
+.marquee-nav {
+    z-index: 97;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.marquee-nav-item {
+    opacity: 0.4;
+    display: inline-block;
+    background-image: url(http://4dconcepts.ca/wp-content/themes/fourdee/images/icons/avigation_icons_32.png);
+    background-position: left;
+    margin: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.selected {
+    opacity: 0.4;
+    background-image: url(http://4dconcepts.ca/wp-content/themes/fourdee/images/icons/avigation_icons_32.png);
+    background-position: right;
+}
+
+/* ISOTOPE ROLLOVER */ 
+
+section.isotopes {
+    position: relative;
+    display: table;
+}
+dl.isotope {
+    position: absolute;
+    overflow: hidden;
+    float: left;
+    background-color: #EEE;
+    z-index: -1;
+    opacity: 0;
+}
+dl.isotope dd {
+    position: absolute;
+    bottom: 0;
+    color: #EEE; 
+    z-index: 98;
+    height: auto;
+    margin: 2em 5em;
+}
+.more {
+    padding: 2em 0 1em;
+	
+}
+.more a {
+    bottom: 0;
+    margin: 3em 0 0;
+    z-index: 99;
+    padding: 0.5em 2em;
+    color: #FFF;
+    border: solid 5px;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 125%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+}
+.more a:hover {
+	color: #8CC63E;
+
+	background-color: #EEE;
+	border: solid 5px #EEE;
+}
+dl.product {
+    background: none;
+    width: 25%;
+	position: relative;
+	
+    display: inline-block;
+    float: left;
+}
+dl.product dt {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	display: block;
+} 
+dt#design {
+    background-position-x: 200px;
+}
+dt#digital {
+    background-position-x: 400px;
+}
+dt#marketing {
+    background-position-x: 600px;
+}
+dt#production {
+    background-position-x: 0;
+}
+dl.product dd {
+    margin: 1em;
+    position: relative;
+    background: none;
+    color: #111;
+    height: auto;
+}
